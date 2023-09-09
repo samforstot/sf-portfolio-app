@@ -1,8 +1,17 @@
-.intro {
-   text-align: center;
+body, html{
+    margin:0;
 }
 
+.intro{
+    text-align: center;
+}
+
+.intro-item{
+    display: inline-block;
+}
 
 img {
     border-radius: 5px;
 }
+
+
