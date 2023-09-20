@@ -2,7 +2,7 @@
     --primary-color: #003853;
     --secondary-color: #3D82AB;
     --tertiary-color: #45BB89;
-    --quatinary-color: #91D4C2;
+    --quatinary-color: #abffe9;
 
     --primary-color-mask: url('assets/colors/primary.png');
     --secondary-color-mask: url('assets/colors/secondary.png');
@@ -12,6 +12,10 @@
 
 }
 
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('assets/fonts/coolveticarg.otf') format('opentype');
+}
 
 body{
     margin:0;
