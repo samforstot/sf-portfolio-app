@@ -1,0 +1,34 @@
+* {
+    background-color: var(--tertiary-color);
+    font-family: 'Coolvetica';
+}
+
+h2{
+    padding: 30px;
+    text-align: center;
+    font-size: 60px;
+    color: var(--primary-color);
+}
+
+.content-wrapper{
+    margin: 5px;
+}
+
+.content{
+    width: 400px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.content > h1 {
+    text-align: center;
+    margin: 0;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.content > p {
+    border-radius: 5px;
+    background-color: white;
+    margin: 5px;
+}
