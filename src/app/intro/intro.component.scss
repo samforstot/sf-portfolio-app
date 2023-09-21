@@ -1,7 +1,3 @@
-*{
-    //outline: 2px solid red;
-}
-
 .intro{
     padding: 20px;
     font-family: 'Coolvetica';
@@ -11,6 +7,7 @@
 img {
     border-radius: 5px;
     max-width: 351px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .box-container{
