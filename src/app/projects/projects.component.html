@@ -1,25 +1,25 @@
 <div class="projects">
     <div class="content-wrapper">
         <h2 class="title">Projects</h2>
-        <div class="card md">
+        <div [ngClass]="{'flip': isFlippedMD}" (click)="toggleCard('md')" class="card md">
             <h1 class="name">Mealdealz</h1>
             <div class="description">
                 <p>Add description Later Add description Later Add description Later Add description Later Add description Later</p>
             </div>
         </div>
-        <div class="card gpt">
+        <div [ngClass]="{'flip': isFlippedGPT}" (click)="toggleCard('gpt')" class="card gpt">
             <h1 class="name">Gator Path Tracker</h1>
             <div class="description">
                 <p>Add description Later Add description Later Add description Later Add description Later Add description Later</p>
             </div>
         </div>
-        <div class="card drig">
+        <div [ngClass]="{'flip': isFlippedDRIG}" (click)="toggleCard('drig')" class="card drig">
             <h1 class="name">D.R.I.G.</h1>
             <div class="description">
                 <p>Add description Later Add description Later Add description Later Add description Later Add description Later</p>
             </div>
         </div>
-        <div class="card hh">
+        <div [ngClass]="{'flip': isFlippedHH}" (click)="toggleCard('hh')" class="card hh">
             <h1 class="name">Hardwood Hustle</h1>
             <div class="description">
                 <p>Add description Later Add description Later Add description Later Add description Later Add description Later</p>
