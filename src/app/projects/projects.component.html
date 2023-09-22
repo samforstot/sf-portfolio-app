@@ -1,0 +1,33 @@
+<div class="projects">
+    <div class="content-wrapper">
+        <h2 class="title">Projects</h2>
+        <div [ngClass]="{'flip': isFlippedMD}" (click)="toggleCard('md')" class="card md">
+            <h1 class="name">Mealdealz</h1>
+            <div class="description">
+                <span class="md-image"></span>
+                <p>Mealdealz is a webapp that streamlines cooking and grocery shopping in the attempt to make the lives of college students (or anyone) easier! For this project, I collaborated with a team using an agile workflow and HTML, CSS, and Typescript within the Angular Frameowork. I also wrote Python scripts that run within a VM periodically to scrape weekly deals from various grocery stores. </p>
+            </div>
+        </div>
+        <div [ngClass]="{'flip': isFlippedGPT}" (click)="toggleCard('gpt')" class="card gpt">
+            <h1 class="name">Gator Path Tracker</h1>
+            <div class="description">
+                <span class="gpt-image"></span>
+                <p>The Gator Path Tracker (GPT) is project that is currently in-development! This webapp makes use of a web driver within various Python scripts to grab student-produced opinions and data relating to the overall difficulty of classes at the Univeristy of Florida. Sources include sites ranging from Reddit (r/ufl) to RateMyProfessor. This data is then passed to OpenAI's ChatGPT API to perform language processing to rate each class and further build a schedule for users.</p>
+            </div>
+        </div>
+        <div [ngClass]="{'flip': isFlippedDRIG}" (click)="toggleCard('drig')" class="card drig">
+            <h1 class="name">D.R.I.G.</h1>
+            <div class="description">
+                <span class="drig-image"></span>
+                <p>The Direct Replay Information Gatherer is an application that displays information based on around 300,000 individual statlines from the National Basketball Association from 2019-2022. This project is meant to test the varying time differences when executing quick sort and merge sort algorithms. Using C++, Windows Forms .NET Framework, and Adobe Photoshop, a UI was created to display results of user searches.<p>
+            </div>
+        </div>
+        <div [ngClass]="{'flip': isFlippedHH}" (click)="toggleCard('hh')" class="card hh">
+            <h1 class="name">Hardwood Hustle</h1>
+            <div class="description">
+                <span class="hh-image"></span>
+                <p>Hardwood Hustle is a side project I did one night so that I could occupy myslef during <i>boring</i> times of the day. This console game makes use of multiple data sets and C++ to run users through a simulated college basketball season with chances of going to March Madness! Other features include recruiting a team and status checking on your overall win statistics! </p>
+            </div>
+        </div>
+    </div>
+</div>

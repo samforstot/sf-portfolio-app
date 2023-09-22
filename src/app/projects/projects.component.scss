@@ -1,0 +1,181 @@
+* {
+    background-color: var(--secondary-color);
+    font-family: 'Coolvetica';
+    //outline: 2px solid red;
+}
+
+.about-me{
+    width: 100%;
+}
+
+h2{
+    padding: 30px 0px 0px 0px;
+    text-align: center;
+    font-size: 60px;
+    color: var(--primary-color);
+}
+
+.content-wrapper{
+    margin: 0px 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.card, .card .name{
+    box-sizing: border-box;
+}
+
+.card{
+    width: 550px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition:transform .5s ;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+}
+
+.md{
+    background-image: url("/assets/images/mealdealz.png");
+    background-size: 100% 100%;
+}
+
+.gpt{
+    background-image: url("/assets/images/gpt.png");
+    background-size: 100% 100%;
+}
+
+.drig{
+    background-image: url("/assets/images/drig.png");
+    background-size: 100% 100%;
+}
+
+.hh{
+    background-image: url("/assets/images/hh.png");
+    background-size: 100% 100%;
+}
+
+.name{
+    //display: none;
+    opacity: 0;
+    transition: opacity .3s ease;
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    padding: 10px;
+    text-align: center;
+    margin: 0;
+    color: var(--primary-color)
+}
+
+.card:hover{
+    box-shadow: 0 12px 24px 0 rgba(0,0,0,0.2);
+    transition: .3s; 
+}
+
+.card:hover > .name{
+    opacity: 1;
+}
+
+.flip{
+    transform: perspective(1000px) rotateY(180deg);
+    background-image: none;
+    background-color: white;
+}
+
+.card.flip .description{
+    display: block;
+    transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
+}
+
+.card.flip .name{
+    display: none;
+}
+
+.description{
+    display: none;
+    background-color: white;
+    border-radius: 5px;
+    height: 100%;
+    border: 3px solid var(--tertiary-color);
+    color: var(--primary-color)
+}
+
+.md-image{
+    background-image: var(--tertiary-color-mask);
+    mask-image: url('/assets/images/mainIcon-default.svg');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 60px;
+    height: 120px;
+
+    position: relative; /* Set the position to relative */
+    top: 10%; /* Adjust the value to move it upwards as desired */
+}
+
+.gpt-image{
+    background-image: var(--tertiary-color-mask);
+    mask-image: url('/assets/images/gator.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+
+    position: relative; /* Set the position to relative */
+    top: 10%; /* Adjust the value to move it upwards as desired */
+}
+
+.drig-image{
+    background-image: var(--tertiary-color-mask);
+    mask-image: url('/assets/images/stats.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+
+    position: relative; /* Set the position to relative */
+    top: 10%; /* Adjust the value to move it upwards as desired */
+}
+
+.hh-image{
+    background-image: var(--tertiary-color-mask);
+    mask-image: url('/assets/images/bball.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+
+    position: relative; /* Set the position to relative */
+    top: 10%; /* Adjust the value to move it upwards as desired */
+}
+
+p {
+    position: absolute;
+    top: 50%;
+    font-size: 18px;
+    background-color: white;
+    margin: 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+i {
+    background-color: white;
+}
+
+
