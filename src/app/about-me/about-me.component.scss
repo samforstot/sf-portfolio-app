@@ -1,6 +1,7 @@
 * {
     background-color: var(--tertiary-color);
     font-family: 'Coolvetica';
+    //outline: 2px solid red;
 }
 
 .about-me{
@@ -15,9 +16,9 @@ h2{
 }
 
 .content-wrapper{
-    margin: 60px;
     text-align: center;
     padding-bottom: 40px;
+    margin: 5px 400px
 }
 
 .content{
