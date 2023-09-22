@@ -84,6 +84,8 @@ h2{
 .card.flip .description{
     display: block;
     transform: rotateY(180deg);
+    justify-content: center;
+    align-items: center;
 }
 
 .card.flip .name{
@@ -94,11 +96,73 @@ h2{
     display: none;
     background-color: white;
     border-radius: 5px;
+    height: 100%;
+    border: 3px solid var(--tertiary-color)
 }
 
+.md-image{
+    background-image: var(--tertiary-color-mask);
+    mask-image: url('/assets/images/mainIcon-default.svg');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 60px;
+    height: 120px;
+
+    position: relative; /* Set the position to relative */
+    top: 10%; /* Adjust the value to move it upwards as desired */
+}
+
+.gpt-image{
+    background-image: var(--tertiary-color-mask);
+    mask-image: url('/assets/images/gator.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+
+    position: relative; /* Set the position to relative */
+    top: 10%; /* Adjust the value to move it upwards as desired */
+}
+
+.drig-image{
+    background-image: var(--tertiary-color-mask);
+    mask-image: url('/assets/images/stats.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+
+    position: relative; /* Set the position to relative */
+    top: 10%; /* Adjust the value to move it upwards as desired */
+}
+
+.hh-image{
+    background-image: var(--tertiary-color-mask);
+    mask-image: url('/assets/images/bball.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+
+    position: relative; /* Set the position to relative */
+    top: 10%; /* Adjust the value to move it upwards as desired */
+}
 
 p {
-    //position: absolute;
+    position: absolute;
+    top: 50%;
     font-size: 18px;
     background-color: white;
     margin: 0;
