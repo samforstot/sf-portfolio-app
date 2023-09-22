@@ -1,1 +1,23 @@
-/* You can add global styles to this file, and also import other style files */
+:root{
+    --primary-color: #003853;
+    --secondary-color: #3D82AB;
+    --tertiary-color: #45BB89;
+    --quatinary-color: #abffe9;
+
+    --primary-color-mask: url('assets/colors/primary.png');
+    --secondary-color-mask: url('assets/colors/secondary.png');
+    --tertiary-color-mask: url('assets/colors/tertiary.png');
+    --quatinary-color-mask: url('assets/colors/quatinary.png');
+    --blank-color-mask: url('assets/colors/blank.png');
+
+}
+
+@font-face {
+    font-family: 'Coolvetica';
+    src: url('assets/fonts/coolveticarg.otf') format('opentype');
+}
+
+body{
+    margin:0;
+    background-color: var(--quatinary-color);
+}

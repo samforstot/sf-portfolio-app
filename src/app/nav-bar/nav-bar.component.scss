@@ -1,0 +1,108 @@
+* {
+    background-color: var(--primary-color);
+}
+
+.navbar{
+    padding: 20px;
+    margin: 0;
+    color: white;
+    font-family: 'Coolvetica';
+}
+
+.images {
+    float: right;
+}
+
+p{
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 2px 2px;
+}
+
+p:hover{
+    color: var(--tertiary-color);
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+
+a {
+    position: relative;
+    margin: 0 10px;
+}
+
+#github{
+    background-image: var(--blank-color-mask);
+    mask-image: url('/assets/images/github.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+
+    position: relative; /* Set the position to relative */
+    bottom: 5px; /* Adjust the value to move it upwards as desired */
+
+}
+
+#linkedin {
+    background-image: var(--blank-color-mask);
+    mask-image: url('/assets/images/linkedin.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+
+    position: relative; /* Set the position to relative */
+    bottom: 4px; /* Adjust the value to move it upwards as desired */
+}
+
+#email {
+    background-image: var(--blank-color-mask);
+    mask-image: url('/assets/images/email.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+
+    position: relative; /* Set the position to relative */
+    bottom: 1px; /* Adjust the value to move it upwards as desired */
+}
+
+#github:hover{
+    background-image: var(--tertiary-color-mask);
+    mask-image: url('/assets/images/github.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: .2s ease-in-out;
+}
+
+#linkedin:hover{
+    background-image: var(--tertiary-color-mask);
+    mask-image: url('/assets/images/linkedin.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: .2s ease-in-out;
+}
+
+#email:hover{
+    background-image: var(--tertiary-color-mask);
+    mask-image: url('/assets/images/email.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    transition: .2s ease-in-out;
+}
+
+
+
