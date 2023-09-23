@@ -1,4 +1,4 @@
-<div class="navbar">
+<div [ngClass]="{'shrunk': isScrolled}" class="navbar">
     <div class="options">
         <p (click)="scrollToDiv('about')">About Me</p>
         <p (click)="scrollToDiv('projects')">Projects</p>

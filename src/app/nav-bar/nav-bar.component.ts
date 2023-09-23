@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, HostListener } from '@angular/core';
 import { SharedService } from '../shared.service';
 
 @Component({
@@ -10,6 +10,15 @@ export class NavBarComponent {
   constructor(private sharedService: SharedService){}
 
   isShown = false;
+  isScrolled = false;
+  @HostListener('window:scroll', ['$event'])
+  onScroll(){
+    if (window.scrollY > 100){
+      this.isScrolled = true;
+    } else {
+      this.isScrolled = false;
+    }
+  }
 
   scrollToDiv(div: string){
     console.log('In Nav Bar');
