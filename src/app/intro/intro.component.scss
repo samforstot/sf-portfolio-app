@@ -1,5 +1,5 @@
 *{
-    outline: 2px solid red;
+    //outline: 2px solid red;
 }
 .intro{
     padding: 20px;
@@ -67,6 +67,36 @@ img {
         opacity: 100;
     }
     
+}
+
+// Changes for Tablet
+@media only screen and (min-width: 768px) and (max-width: 1180px){
+    .box-content > h1 {
+        position: relative;
+        top: 30%;
+        font-size: 8vh;
+        //-webkit-text-stroke: 2px var(--primary-color);
+        //color: transparent;
+        animation: slidein .7s ease-in-out;
+        z-index: -1;
+        margin: 0;
+    }
+
+    .box-content > h2 {
+        position: relative;
+        top: 30%;
+        font-size: 3vh;
+        margin: 0;
+        z-index: -1;
+        animation: slidein .7s ease-in-out;
+    }
+}
+
+// Changes for Mobile
+@media only screen and (max-width: 767px){
+    .intro{
+        background-color: green;
+    }
 }
 
 

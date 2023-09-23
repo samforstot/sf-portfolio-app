@@ -1,7 +1,7 @@
 * {
     background-color: var(--tertiary-color);
     font-family: 'Coolvetica';
-    outline: 2px solid red;
+    //outline: 2px solid red;
 }
 
 .about-me{
@@ -61,4 +61,18 @@ h2{
 
 .tech > p{
     text-align: center;
+}
+
+// Changes for Tablet
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .about-me{
+        background-color: red;
+    }
+}
+
+// Changes for Mobile
+@media only screen and (max-width: 767px){
+    .about-me{
+        background-color: green;
+    }
 }

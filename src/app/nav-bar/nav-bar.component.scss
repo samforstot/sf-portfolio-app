@@ -104,5 +104,19 @@ a {
     transition: .2s ease-in-out;
 }
 
+// Changes for Tablet
+@media only screen and (min-width: 768px) and (max-width: 991px){
+    .navbar{
+        //background-color: red;
+    }
+}
+
+// Changes for Mobile
+@media only screen and (max-width: 767px){
+    .navbar{
+        background-color: green;
+    }
+}
+
 
 
