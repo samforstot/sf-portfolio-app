@@ -2,39 +2,36 @@
     background-color: var(--secondary-color);
     font-family: 'Coolvetica';
     //outline: 2px solid red;
+    margin:0;
 }
 
-.about-me{
-    width: 100%;
+.projects {
+    height: 100vh;
 }
 
 h2{
     padding: 30px 0px 0px 0px;
     text-align: center;
-    font-size: 60px;
+    font-size: 4vw;
     color: var(--primary-color);
 }
 
 .content-wrapper{
-    margin: 0px 100px;
-    padding-bottom: 50px;
+    position: relative;
+    margin: 5vw 10vw;
     text-align: center;
 }
 
-.card, .card .name{
-    box-sizing: border-box;
-}
-
 .card{
-    width: 550px;
-    height: 350px;
+    width: 29vw;
+    height: 38vh;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition:transform .5s ;
     cursor: pointer;
     display: inline-block;
     vertical-align: top;
-    margin: 15px;
+    margin: 12px;
 }
 
 .md{
@@ -60,6 +57,7 @@ h2{
 .name{
     //display: none;
     opacity: 0;
+    font-size: 3vh;
     transition: opacity .3s ease;
     background-color: white;
     border-radius: 5px 5px 0px 0px;
@@ -97,6 +95,8 @@ h2{
 
 .description{
     display: none;
+    width: 29vw;
+    height: 38vh;
     background-color: white;
     border-radius: 5px;
     height: 100%;
@@ -112,8 +112,8 @@ h2{
     mask-position: center;
 
     display: inline-block;
-    width: 60px;
-    height: 120px;
+    width: 6vh;
+    height: 12vh;
 
     position: relative; /* Set the position to relative */
     top: 10%; /* Adjust the value to move it upwards as desired */
@@ -127,8 +127,8 @@ h2{
     mask-position: center;
 
     display: inline-block;
-    width: 120px;
-    height: 120px;
+    width: 12vh;
+    height: 12vh;
 
     position: relative; /* Set the position to relative */
     top: 10%; /* Adjust the value to move it upwards as desired */
@@ -142,8 +142,8 @@ h2{
     mask-position: center;
 
     display: inline-block;
-    width: 120px;
-    height: 120px;
+    width: 12vh;
+    height: 12vh;
 
     position: relative; /* Set the position to relative */
     top: 10%; /* Adjust the value to move it upwards as desired */
@@ -157,8 +157,8 @@ h2{
     mask-position: center;
 
     display: inline-block;
-    width: 120px;
-    height: 120px;
+    width: 12vh;
+    height: 12vh;
 
     position: relative; /* Set the position to relative */
     top: 10%; /* Adjust the value to move it upwards as desired */
@@ -167,7 +167,7 @@ h2{
 p {
     position: absolute;
     top: 50%;
-    font-size: 18px;
+    font-size: 2vh;
     background-color: white;
     margin: 0;
     border-radius: 5px;
