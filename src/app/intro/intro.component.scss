@@ -1,38 +1,41 @@
 .intro{
     padding: 20px;
     font-family: 'Coolvetica';
-    height: 90vh;
-}
-
-img {
-    border-radius: 5px;
-    max-width: 351px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    height: 87vh;
+    background-color: var(--quatinary-color);
+    margin-bottom: 10px;
 }
 
 .box-container{
     display: flex;
     position: absolute;
+    width: 90%;
     top: 50%;
     left: 50%; 
     transform: translate(-50%, -50%);
     justify-content: center;
+    margin: 1vw;
+}
+
+img {
+    border-radius: 5px;
+    width: 25vw;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .box-image {
-    margin-right: 15px;
+    margin: 1vw;
 }
 
 .box-content{
     color: var(--primary-color);
     width: fit-content;
-    height: 366px;
 }
 
 .box-content > h1 {
     position: relative;
     top: 30%;
-    font-size: 80px;
+    font-size: 10vh;
     //-webkit-text-stroke: 2px var(--primary-color);
     //color: transparent;
     animation: slidein .7s ease-in-out;
@@ -44,6 +47,7 @@ img {
 .box-content > h2 {
     position: relative;
     top: 30%;
+    font-size: 5vh;
     margin: 0;
     z-index: -1;
     animation: slidein .7s ease-in-out;
@@ -62,6 +66,56 @@ img {
         opacity: 100;
     }
     
+}
+
+// Changes for Tablet
+@media only screen and (min-width: 768px) and (max-width: 1180px){
+    .box-content > h1 {
+        position: relative;
+        top: 30%;
+        font-size: 8vh;
+        //-webkit-text-stroke: 2px var(--primary-color);
+        //color: transparent;
+        animation: slidein .7s ease-in-out;
+        z-index: -1;
+        margin: 0;
+    }
+
+    .box-content > h2 {
+        position: relative;
+        top: 30%;
+        font-size: 3vh;
+        margin: 0;
+        z-index: -1;
+        animation: slidein .7s ease-in-out;
+    }
+}
+
+.mobile-container{
+    display: none;
+}
+
+// Changes for Mobile
+@media only screen and (max-width: 767px){
+    .intro{
+        height: 60vh;
+        margin: 0;
+    }
+    .box-container{
+        display: none;
+    }
+
+    .mobile-container{
+        top:50%;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        color: var(--primary-color)
+    }
+
+    .mobile-container > img {
+        width: 200px;
+    }
 }
 
 

@@ -2,39 +2,36 @@
     background-color: var(--secondary-color);
     font-family: 'Coolvetica';
     //outline: 2px solid red;
+    margin:0;
 }
 
-.about-me{
-    width: 100%;
+.projects {
+    height: 100vh;
 }
 
 h2{
     padding: 30px 0px 0px 0px;
     text-align: center;
-    font-size: 60px;
+    font-size: 4vw;
     color: var(--primary-color);
 }
 
 .content-wrapper{
-    margin: 0px 100px;
-    padding-bottom: 50px;
+    position: relative;
+    margin: 0 10vw;
     text-align: center;
 }
 
-.card, .card .name{
-    box-sizing: border-box;
-}
-
 .card{
-    width: 550px;
-    height: 350px;
+    width: 29vw;
+    height: 38vh;
     border-radius: 5px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition:transform .5s ;
     cursor: pointer;
     display: inline-block;
     vertical-align: top;
-    margin: 15px;
+    margin: 12px;
 }
 
 .md{
@@ -60,8 +57,9 @@ h2{
 .name{
     //display: none;
     opacity: 0;
+    font-size: 3vh;
     transition: opacity .3s ease;
-    background-color: white;
+    background-color: rgba(255, 255, 255, .8);
     border-radius: 5px 5px 0px 0px;
     padding: 10px;
     text-align: center;
@@ -97,6 +95,8 @@ h2{
 
 .description{
     display: none;
+    width: 29vw;
+    height: 38vh;
     background-color: white;
     border-radius: 5px;
     height: 100%;
@@ -112,8 +112,8 @@ h2{
     mask-position: center;
 
     display: inline-block;
-    width: 60px;
-    height: 120px;
+    width: 6vh;
+    height: 12vh;
 
     position: relative; /* Set the position to relative */
     top: 10%; /* Adjust the value to move it upwards as desired */
@@ -127,8 +127,8 @@ h2{
     mask-position: center;
 
     display: inline-block;
-    width: 120px;
-    height: 120px;
+    width: 12vh;
+    height: 12vh;
 
     position: relative; /* Set the position to relative */
     top: 10%; /* Adjust the value to move it upwards as desired */
@@ -142,8 +142,8 @@ h2{
     mask-position: center;
 
     display: inline-block;
-    width: 120px;
-    height: 120px;
+    width: 12vh;
+    height: 12vh;
 
     position: relative; /* Set the position to relative */
     top: 10%; /* Adjust the value to move it upwards as desired */
@@ -157,8 +157,8 @@ h2{
     mask-position: center;
 
     display: inline-block;
-    width: 120px;
-    height: 120px;
+    width: 12vh;
+    height: 12vh;
 
     position: relative; /* Set the position to relative */
     top: 10%; /* Adjust the value to move it upwards as desired */
@@ -167,7 +167,7 @@ h2{
 p {
     position: absolute;
     top: 50%;
-    font-size: 18px;
+    font-size: 2vh;
     background-color: white;
     margin: 0;
     border-radius: 5px;
@@ -176,6 +176,107 @@ p {
 
 i {
     background-color: white;
+}
+
+// Changes for Tablet
+@media only screen and (min-width: 768px) and (max-width: 1180px){
+
+    .content-wrapper{
+        //position: relative;
+        margin: 0;
+        text-align: center;
+    }
+
+    .card{
+        width: 40vw;
+        height: 38vh;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition:transform .5s ;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: top;
+        margin: 12px;
+    }
+    
+    .name{
+        font-size: 3vh;
+        //transition: opacity .3s ease;
+        opacity: 1;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px 5px 0px 0px;
+        padding: 10px;
+    }
+
+    .description{
+        display: none;
+        width: 40vw;
+        height: 38vh;
+        background-color: white;
+        border-radius: 5px;
+        height: 100%;
+        border: 3px solid var(--tertiary-color);
+        color: var(--primary-color)
+    }
+
+    p {
+        position: absolute;
+        top: 50%;
+        font-size: 15px;
+        background-color: white;
+        margin: 0;
+        border-radius: 5px;
+        padding: 5px;
+    }
+
+
+}
+
+// Changes for Mobile
+@media only screen and (max-width: 767px){
+    h2{
+        padding-top: 15px;
+        text-align: center;
+        font-size: 30px;
+        color: var(--primary-color);
+    }
+    
+    .content-wrapper{
+        //position: relative;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .card{
+        width: 80vw;
+        height: 30vh;
+        margin: 12px;
+    }
+    
+    .name{
+        font-size: 16px;
+        //transition: opacity .3s ease;
+        opacity: 1;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px 5px 0px 0px;
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+        color: var(--primary-color)
+    }
+
+    .description{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    p {
+        position: absolute;
+        font-size: 10px;
+        margin: 0;
+    }
+
 }
 
 

@@ -9,8 +9,14 @@ import { SharedService } from '../shared.service';
 export class NavBarComponent {
   constructor(private sharedService: SharedService){}
 
+  isShown = false;
+
   scrollToDiv(div: string){
     console.log('In Nav Bar');
     this.sharedService.setScrollSection(div);
+  }
+
+  toggleOptions(){
+    this.isShown = !this.isShown;
   }
 }
