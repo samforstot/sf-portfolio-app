@@ -10,4 +10,12 @@
             <a href="mailto:forstotsam@gmail.com" id="email"><span class="logo-e" id="email"></span></a> 
         </div>
     </div>
+    <div class="mobile-options">
+        <span (click)="toggleOptions()" class="ham-options"></span>
+        <p [ngClass]="{'show': isShown}" (click)="scrollToDiv('about')">About Me</p>
+        <p [ngClass]="{'show': isShown}" (click)="scrollToDiv('projects')">Projects</p>
+        <p [ngClass]="{'show': isShown}">Experiments</p>
+        <p [ngClass]="{'show': isShown}">Resume</p>
+        <p [ngClass]="{'show': isShown}">Contact</p>
+    </div>
 </div>

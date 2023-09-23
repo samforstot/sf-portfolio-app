@@ -1,10 +1,9 @@
-*{
-    //outline: 2px solid red;
-}
 .intro{
     padding: 20px;
     font-family: 'Coolvetica';
     height: 87vh;
+    background-color: var(--quatinary-color);
+    margin-bottom: 10px;
 }
 
 .box-container{
@@ -92,10 +91,30 @@ img {
     }
 }
 
+.mobile-container{
+    display: none;
+}
+
 // Changes for Mobile
 @media only screen and (max-width: 767px){
     .intro{
-        background-color: green;
+        height: 60vh;
+        margin: 0;
+    }
+    .box-container{
+        display: none;
+    }
+
+    .mobile-container{
+        top:50%;
+        display: block;
+        justify-content: center;
+        text-align: center;
+        color: var(--primary-color)
+    }
+
+    .mobile-container > img {
+        width: 200px;
     }
 }
 

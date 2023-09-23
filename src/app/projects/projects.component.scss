@@ -18,7 +18,7 @@ h2{
 
 .content-wrapper{
     position: relative;
-    margin: 5vw 10vw;
+    margin: 0 10vw;
     text-align: center;
 }
 
@@ -206,9 +206,6 @@ i {
         background-color: rgba(255, 255, 255, .8);
         border-radius: 5px 5px 0px 0px;
         padding: 10px;
-        text-align: center;
-        margin: 0;
-        color: var(--primary-color)
     }
 
     .description{
@@ -237,9 +234,49 @@ i {
 
 // Changes for Mobile
 @media only screen and (max-width: 767px){
-    .projects{
-        background-color: green;
+    h2{
+        padding-top: 15px;
+        text-align: center;
+        font-size: 30px;
+        color: var(--primary-color);
     }
+    
+    .content-wrapper{
+        //position: relative;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .card{
+        width: 80vw;
+        height: 30vh;
+        margin: 12px;
+    }
+    
+    .name{
+        font-size: 16px;
+        //transition: opacity .3s ease;
+        opacity: 1;
+        background-color: rgba(255, 255, 255, .8);
+        border-radius: 5px 5px 0px 0px;
+        padding: 10px;
+        text-align: center;
+        margin: 0;
+        color: var(--primary-color)
+    }
+
+    .description{
+        width: 80vw;
+        height: 30vh;
+    }
+
+    p {
+        position: absolute;
+        font-size: 10px;
+        margin: 0;
+    }
+
 }
 
 
