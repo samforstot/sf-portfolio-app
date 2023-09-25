@@ -50,7 +50,7 @@ p{
 }
 
 
-p:hover{
+p:hover,.pdf:hover{
     color: var(--tertiary-color);
     cursor: pointer;
     transition: .2s ease-in-out;
@@ -164,6 +164,15 @@ p.name.shrunk{
         opacity: 1;
 
     }
+
+    a{
+        display: block;
+        margin: 0;
+        padding: 0;
+        color: white;
+        text-decoration: none;
+    }
+
     .ham-options{
         background-image: var(--blank-color-mask);
         mask-image: url('/assets/images/mobilenav.png');

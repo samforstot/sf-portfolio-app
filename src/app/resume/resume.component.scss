@@ -39,8 +39,9 @@ iframe{
 }
 
 .button-container{
+    display: flex;
     top: 45vh;
-    margin: 2vh;
+    margin: 2vh auto;
     text-align: center;
     padding: 3vh;
     border-radius: 100%;
@@ -57,8 +58,8 @@ iframe{
     mask-position: center;
 
     display: inline-block;
-    width: 25px;
-    height: 25px;
+    width: 2vh;
+    height: 2vh;
 }
 
 
