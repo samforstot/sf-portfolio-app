@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener, ElementRef, ViewChild } from '@angular/core';
 import { SharedService } from '../shared.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { SharedService } from '../shared.service';
 })
 export class ResumeComponent {
   isShown = false; 
-  constructor(private sharedService: SharedService){}
+  constructor(private sharedService: SharedService){};
 
   ngOnInit(){
     this.sharedService.getScrollSection().subscribe((value: string) => {
@@ -20,6 +20,8 @@ export class ResumeComponent {
   toggleResume(value: string){
     if(value == 'resume'){
       this.isShown = !this.isShown;
+      console.log(this.isShown)
     }
   }
+
 }

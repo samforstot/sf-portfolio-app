@@ -2,7 +2,7 @@
     position: fixed;
     align-items: center;
     //outline: 2px solid red;
-    top: 50%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1001;
@@ -11,10 +11,12 @@
 .resume{
     opacity: 0;
     transition: all .2s ease-in-out;
+    pointer-events: none;
 }
 
 .resume.show{
     opacity: 1;
+    pointer-events: all;
 }
 
 .pdf-container{
@@ -23,7 +25,8 @@
     text-align: center;
     padding: 20vw;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    //box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    //position: relative;
 }
 
 iframe{
@@ -34,4 +37,29 @@ iframe{
     border: 7px solid var(--tertiary-color);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
+
+.button-container{
+    top: 45vh;
+    margin: 2vh;
+    text-align: center;
+    padding: 3vh;
+    border-radius: 100%;
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.close{
+    background-image: var(--blank-color-mask);
+    mask-image: url('/assets/images/x.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+
 
