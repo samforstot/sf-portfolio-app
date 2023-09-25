@@ -1,0 +1,37 @@
+* {
+    position: fixed;
+    align-items: center;
+    //outline: 2px solid red;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001;
+}
+
+.resume{
+    opacity: 0;
+    transition: all .2s ease-in-out;
+}
+
+.resume.show{
+    opacity: 1;
+}
+
+.pdf-container{
+    z-index: 1002;
+    justify-content: center;
+    text-align: center;
+    padding: 20vw;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+iframe{
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 7px solid var(--tertiary-color);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
