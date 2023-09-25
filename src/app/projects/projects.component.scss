@@ -1,12 +1,13 @@
 * {
     background-color: var(--secondary-color);
     font-family: 'Coolvetica';
-    //outline: 2px solid red;
+    outline: 2px solid red;
     margin:0;
 }
 
 .projects {
     height: 100vh;
+    margin-bottom: 10px;
 }
 
 h2{
@@ -180,7 +181,6 @@ i {
 
 // Changes for Tablet
 @media only screen and (min-width: 768px) and (max-width: 1180px){
-
     .content-wrapper{
         //position: relative;
         margin: 0;
@@ -234,6 +234,11 @@ i {
 
 // Changes for Mobile
 @media only screen and (max-width: 767px){
+    .projects{
+        height: fit-content;
+        margin: 0;
+    }
+
     h2{
         padding-top: 40px;
         text-align: center;

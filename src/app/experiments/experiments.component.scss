@@ -1,0 +1,87 @@
+*{
+    background-color: var(--tertiary-color);
+    font-family: 'Coolvetica';
+    //outline: 2px solid red;
+}
+
+.experiments{
+    width: 100;
+    height: 100vh;
+}
+
+h2{
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 4vw;
+    color: var(--primary-color);
+}
+
+.content-wrapper{
+    position: relative;
+    text-align: center;
+    height: 100vh;
+}
+
+.description{
+    margin: 2vw 20vw;
+}
+
+.description > p {
+    font-size: 2vw;
+    padding: 1vh;
+    border-radius: 5px;
+    background-color: white;
+    color: var(--primary-color);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.button{
+    margin: 6vw 30vw;
+    cursor: pointer;
+}
+
+.button > p {
+    background-color: var(--secondary-color);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: white;
+    font-size: 3vw; 
+    padding: 2vh;
+    border-radius: 5px;
+    transition: background-color .3s ease;
+}
+
+.button > p:hover{
+    background-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 767px){
+    .experiments{
+        margin: 0;
+        padding: 0;
+        height: 60vh;
+    }
+
+    h2{
+        padding-top: 40px;
+        text-align: center;
+        font-size: 30px;
+        color: var(--primary-color);
+    }
+    
+    .content-wrapper{
+        //position: relative;
+        margin: 0;
+        text-align: center;
+        justify-content: center;
+        height: 60vh;
+    }
+
+    .description > p{
+        font-size: 15px;
+    }
+
+    .button{
+        margin: 6vw 20vw;
+    }
+}
