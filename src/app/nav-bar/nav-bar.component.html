@@ -16,7 +16,7 @@
         <span (click)="toggleOptions()" class="ham-options"></span>
         <p [ngClass]="{'show': isShown}" (click)="scrollToDiv('about')" (click)="toggleOptions()">About Me</p>
         <p [ngClass]="{'show': isShown}" (click)="scrollToDiv('projects')" (click)="toggleOptions()">Projects</p>
-        <p [ngClass]="{'show': isShown}" (click)="scrollToDiv('experiments')">Experiments</p>
+        <p [ngClass]="{'show': isShown}" (click)="scrollToDiv('experiments')" (click)="toggleOptions()">Experiments</p>
         <p [ngClass]="{'show': isShown}"><a class="pdf" href="assets/docs/SamForstot-Resume.pdf" target="_blank">Resume</a></p>
         <p [ngClass]="{'show': isShown}">Contact</p>
     </div>
