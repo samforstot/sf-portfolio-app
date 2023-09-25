@@ -1,6 +1,6 @@
 * {
     background-color: var(--primary-color);
-    //outline: 2px solid red
+    //outline: 2px solid red;
     margin:0;
     padding: 0;
 }
@@ -37,8 +37,16 @@ p{
     padding-bottom: 0;
 }
 
-.navbar.navbar.shrunk > p {
+.navbar.shrunk > p {
     font-size: 10px;
+}
+
+.options .name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 
@@ -48,9 +56,24 @@ p:hover{
     transition: .2s ease-in-out;
 }
 
+p.name {
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    cursor: default;
+}
+
 a {
     position: relative;
     margin: 0 10px;
+}
+
+p.name.shrunk{
+    opacity: 1;
+    transition: .3s ease-in-out;
+    cursor: pointer;
 }
 
 #github{

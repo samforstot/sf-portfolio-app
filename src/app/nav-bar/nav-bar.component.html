@@ -4,6 +4,7 @@
         <p (click)="scrollToDiv('projects')">Projects</p>
         <p>Experiments</p>
         <p>Resume</p>
+        <p (click)="scrollToDiv('intro')"  [ngClass]="{'shrunk': isScrolled}" class="name">Sam Forstot</p>
         <div class="images">
             <a href="https://github.com/samforstot" target="_blank"><span class="logo-g" id="github"></span></a>
             <a href="https://www.linkedin.com/in/samforstot/" target="_blank"><span class="logo-l" id="linkedin"></span></a>
