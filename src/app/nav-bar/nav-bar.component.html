@@ -12,9 +12,10 @@
         </div>
     </div>
     <div class="mobile-options">
+        <h2 [ngClass]="{'shrunk': isScrolled}" (click)="scrollToDiv('intro')" class="name">Sam Forstot</h2>
         <span (click)="toggleOptions()" class="ham-options"></span>
-        <p [ngClass]="{'show': isShown}" (click)="scrollToDiv('about')">About Me</p>
-        <p [ngClass]="{'show': isShown}" (click)="scrollToDiv('projects')">Projects</p>
+        <p [ngClass]="{'show': isShown}" (click)="scrollToDiv('about')" (click)="toggleOptions()">About Me</p>
+        <p [ngClass]="{'show': isShown}" (click)="scrollToDiv('projects')" (click)="toggleOptions()">Projects</p>
         <p [ngClass]="{'show': isShown}">Experiments</p>
         <p [ngClass]="{'show': isShown}">Resume</p>
         <p [ngClass]="{'show': isShown}">Contact</p>
