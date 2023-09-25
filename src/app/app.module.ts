@@ -9,6 +9,7 @@ import { IntroComponent } from './intro/intro.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { CommonModule } from '@angular/common';
 import { ResumeComponent } from './resume/resume.component';
+import { ExperimentsComponent } from './experiments/experiments.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ResumeComponent } from './resume/resume.component';
     AboutMeComponent,
     IntroComponent,
     ProjectsComponent,
-    ResumeComponent
+    ResumeComponent,
+    ExperimentsComponent
   ],
   imports: [
     BrowserModule,

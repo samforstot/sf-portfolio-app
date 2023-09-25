@@ -2,7 +2,7 @@
     <div class="options">
         <p (click)="scrollToDiv('about')">About Me</p>
         <p (click)="scrollToDiv('projects')">Projects</p>
-        <p>Experiments</p>
+        <p (click)="scrollToDiv('experiments')">Experiments</p>
         <p (click)="scrollToDiv('resume')">Resume</p>
         <p (click)="scrollToDiv('intro')"  [ngClass]="{'shrunk': isScrolled}" class="name">Sam Forstot</p>
         <div class="images">
