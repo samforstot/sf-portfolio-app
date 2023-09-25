@@ -8,6 +8,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { IntroComponent } from './intro/intro.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { CommonModule } from '@angular/common';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { CommonModule } from '@angular/common';
     NavBarComponent,
     AboutMeComponent,
     IntroComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    ResumeComponent
   ],
   imports: [
     BrowserModule,
