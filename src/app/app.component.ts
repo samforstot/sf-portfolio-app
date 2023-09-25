@@ -21,8 +21,9 @@ export class AppComponent {
 
   scrollToTarget(value: string){
     const scrollTarget = document.getElementById(value);
+    
     if(scrollTarget){
-      scrollTarget?.scrollIntoView({behavior: 'smooth'});
+      scrollTarget?.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
   }
 }

@@ -1,6 +1,8 @@
 * {
     background-color: var(--primary-color);
-    //outline: 2px solid red
+    //outline: 2px solid red;
+    margin:0;
+    padding: 0;
 }
 
 .navbar{
@@ -8,6 +10,14 @@
     margin: 0;
     color: white;
     font-family: 'Coolvetica';
+    position: fixed; /* Add this line to make it fixed */
+    top: 0; /* Add this line to stick it to the top of the viewport */
+    left: 0; /* Add this line to stick it to the left of the viewport */
+    width: 100%; /* Add this line to make it full width */
+    background-color: var(--primary-color); /* Set background color */
+    z-index: 1000; 
+    box-sizing: border-box;
+    transition: all .3s;
 }
 
 .images {
@@ -22,15 +32,48 @@ p{
     padding: 2px 2px;
 }
 
+.navbar.shrunk{
+    padding: 1vh;
+    padding-bottom: 0;
+}
+
+.navbar.shrunk > p {
+    font-size: 10px;
+}
+
+.options .name {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+
 p:hover{
     color: var(--tertiary-color);
     cursor: pointer;
     transition: .2s ease-in-out;
 }
 
+p.name {
+    font-size: 35px;
+    padding: 0;
+    margin: 0;
+    opacity: 0;
+    transition: .3s ease-in-out;
+    cursor: default;
+}
+
 a {
     position: relative;
     margin: 0 10px;
+}
+
+p.name.shrunk{
+    opacity: 1;
+    transition: .3s ease-in-out;
+    cursor: pointer;
 }
 
 #github{
@@ -57,8 +100,8 @@ a {
     mask-position: center;
 
     display: inline-block;
-    width: 36px;
-    height: 32px;
+    width: 38px;
+    height: 34px;
 
     position: relative; /* Set the position to relative */
     bottom: 4px; /* Adjust the value to move it upwards as desired */
@@ -106,16 +149,19 @@ a {
     transition: .2s ease-in-out;
 }
 
-.mobile-options > p{
+.mobile-options > p, h2{
     display: none;
 }
 
 // Changes for Mobile
 @media only screen and (max-width: 767px){
+    .navbar{
+        padding: 0;
+        margin: 0;
+    }
+
     .mobile-options > p{
         opacity: 1;
-        margin: 0;
-        padding: 0;
 
     }
     .ham-options{
@@ -128,7 +174,9 @@ a {
         display: inline-block;
         width: 25px;
         height: 25px;
-    
+        margin-left: 10px;
+        margin-top: 10px;
+        bottom: 3px;
         position: relative; /* Set the position to relative */
     }
 
@@ -138,12 +186,30 @@ a {
         display: block;
     }
 
+    .name{
+        display: block;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: normal;
+    }
+
     .options{
         display: none;
     }
 
     .images{
         display: none;
+    }
+
+    .name.shrunk{
+        opacity: 1;
+    }
+
+    .navbar.shrunk{
+        padding: 0;
     }
 
 
