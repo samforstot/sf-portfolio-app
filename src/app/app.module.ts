@@ -11,6 +11,8 @@ import { CommonModule } from '@angular/common';
 import { ResumeComponent } from './resume/resume.component';
 import { ExperimentsComponent } from './experiments/experiments.component';
 import { ExperimentsPageComponent } from './experiments-page/experiments-page.component';
+import { HomeComponent } from './home/home.component';
+import { ExpNavComponent } from './experiments-page/exp-nav/exp-nav.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { ExperimentsPageComponent } from './experiments-page/experiments-page.co
     ResumeComponent,
     ExperimentsComponent,
     ExperimentsPageComponent,
-    routingCompnents
+    routingCompnents,
+    HomeComponent,
+    ExpNavComponent
   ],
   imports: [
     BrowserModule,
