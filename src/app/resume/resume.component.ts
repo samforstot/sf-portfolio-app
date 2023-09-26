@@ -12,7 +12,7 @@ export class ResumeComponent {
 
   ngOnInit(){
     this.sharedService.getScrollSection().subscribe((value: string) => {
-      console.log('In Resume')
+      console.log('In Resume', value)
       this.toggleResume(value);
     })
   }

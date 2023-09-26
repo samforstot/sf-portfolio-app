@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 2px solid red;
+    font-family: 'Coolvetica';
+}
+
+.nav-container{
+    background-color: var(--primary-color);
+    height: 100vh;
+    margin-right: 85vw;
+}
+
+.options{
+    display: inline;
+    justify-content: center;
+    text-align: center;
+}
+
+
+p {
+    text-align: center;
+    color: white;
+    font-size: 5vh;
+}
+
+p:hover {
+    color: var(--tertiary-color);
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+}
