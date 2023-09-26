@@ -9,6 +9,7 @@ import { SharedService } from 'src/app/shared.service';
 })
 export class ExpNavComponent {
   constructor(private router: Router, private sharedService: SharedService){}
+  isShown = true;
 
   goToPage(pageName: string){
     this.router.navigate([`${pageName}`])
@@ -16,5 +17,9 @@ export class ExpNavComponent {
 
   showResume(div: string){
     this.sharedService.setResumeSection(div);
+  }
+
+  toggleNav(){
+    this.isShown = !this.isShown;
   }
 }

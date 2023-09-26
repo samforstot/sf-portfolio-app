@@ -1,31 +1,112 @@
 *{
     margin: 0;
     padding: 0;
-    outline: 2px solid red;
+    //outline: 2px solid red;
     font-family: 'Coolvetica';
+    z-index: 1;
 }
 
 .nav-container{
+    position: relative;
     background-color: var(--primary-color);
     height: 100vh;
-    margin-right: 85vw;
+    margin-right: 96vw;
+    transition: all .3s ease-in-out;
+}
+
+.nav-container.show{
+    background-color: var(--primary-color);
+    height: 100vh;
+    margin-right: 82vw;
 }
 
 .options{
+    position: relative;
     display: inline;
     justify-content: center;
     text-align: center;
+    opacity: 0;
+    cursor: default;
+    transition: .1s ease-in-out;
 }
 
+.nav-container.show > .options{
+    opacity: 1;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+    transition-delay: .3s;
+}
+
+.icon{
+    background-image: var(--blank-color-mask);
+    mask-image: url('/assets/images/mobilenav.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    margin-left: 2vh;
+    margin-top: 2vh;
+    width: 4vh;
+    height: 4vh;
+    cursor: pointer;
+    transition: background-image .3s ease;
+    opacity: 1;
+    
+}
+
+.icon:hover{
+    background-image: var(--tertiary-color-mask);
+}
+
+.icon.show{
+    mask-image: url('/assets/images/x.png');
+    opacity: 1;
+}
+
+.header{
+    display: inline-block;
+}
 
 p {
     text-align: center;
     color: white;
-    font-size: 5vh;
+    font-size: 2vw;
+    position: relative;
 }
 
-p:hover {
+p.header{
+    //align-self: auto;
+    margin-left: 1vw;
+}
+
+p.header:hover {
     color: var(--tertiary-color);
-    transition: all .3s ease-in-out;
+    transition: color .3s ease-in-out;
     cursor: pointer;
+}
+
+.title{
+    cursor: default;
+    padding-left: 10px;
+    text-align: left;
+    margin-top: 1vw;
+}
+
+.experiment-list {
+    margin-top: 1vh;
+    display: block;
+}
+
+.experiment-list > p {
+    font-size: 3vh;
+    text-align: left;
+    padding-left: 10px;
+    margin: 0;
+}
+
+.experiment-list > p:hover{
+    color: white;
+    background-color: rgb(5, 34, 58);
+    transition: all .3s ease-in-out;
 }
