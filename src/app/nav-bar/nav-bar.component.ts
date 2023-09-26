@@ -26,6 +26,11 @@ export class NavBarComponent {
     this.sharedService.setScrollSection(div);
   }
 
+  showResume(div: string){
+    console.log('In navbar.resume');
+    this.sharedService.setResumeSection(div);
+  }
+
   toggleOptions(){
     this.isShown = !this.isShown;
   }
