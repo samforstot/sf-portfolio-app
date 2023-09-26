@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output, HostListener } from '@angular/core';
 import { SharedService } from '../shared.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,7 +8,7 @@ import { SharedService } from '../shared.service';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
-  constructor(private sharedService: SharedService){}
+  constructor(private sharedService: SharedService, private router: Router){}
 
   isShown = false;
   isScrolled = false;
@@ -23,6 +24,11 @@ export class NavBarComponent {
   scrollToDiv(div: string){
     console.log('In Nav Bar');
     this.sharedService.setScrollSection(div);
+  }
+
+  showResume(div: string){
+    console.log('In navbar.resume');
+    this.sharedService.setResumeSection(div);
   }
 
   toggleOptions(){

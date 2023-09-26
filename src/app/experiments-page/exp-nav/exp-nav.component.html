@@ -1,0 +1,14 @@
+<div class="exp-nav">
+    <div [ngClass]="{'show': isShown}" class="nav-container">
+        <span [ngClass]="{'show': isShown}" class="header icon" (click)="toggleNav()"></span>
+            <div class="options">
+            <p class="header back" (click)="showResume('no')" (click)="goToPage('')" title="Back to Home">Sam Forstot</p>
+            <p class="title">Experiments:</p>
+            <div class="experiment-list">
+                <p>Example 1</p>
+                <p>Example 2</p>
+                <p>Example 3</p>
+            </div>
+        </div>
+    </div>
+</div>

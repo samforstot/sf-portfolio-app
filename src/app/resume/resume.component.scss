@@ -47,7 +47,12 @@ iframe{
     border-radius: 100%;
     background-color: var(--secondary-color);
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: background-color .3s ease;
     cursor: pointer;
+}
+
+.button-container:hover{
+    background-color: var(--primary-color);
 }
 
 .close{

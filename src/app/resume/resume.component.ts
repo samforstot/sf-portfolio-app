@@ -11,8 +11,9 @@ export class ResumeComponent {
   constructor(private sharedService: SharedService){};
 
   ngOnInit(){
-    this.sharedService.getScrollSection().subscribe((value: string) => {
-      console.log('In Resume')
+    this.isShown = false;
+    this.sharedService.getResumeSection().subscribe((value: string) => {
+      console.log('In Resume', value)
       this.toggleResume(value);
     })
   }
