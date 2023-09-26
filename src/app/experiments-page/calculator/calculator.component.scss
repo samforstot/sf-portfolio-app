@@ -1,0 +1,25 @@
+*{
+    font-family: 'Coolvetica';
+}
+
+.calculator {
+    position: relative;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--tertiary-color); 
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 4vw;
+    color: var(--primary-color);
+}
