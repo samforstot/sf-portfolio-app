@@ -1,0 +1,76 @@
+*{
+    font-family: 'Coolvetica';
+    text-align: center;
+}
+
+.contacts{
+    height: 50vh;
+}
+
+h2{
+    font-size: 4vw;
+    margin: 0;
+    padding-top: 40px;
+    color: white;
+}
+
+.card {
+    background-color: white;
+    margin: 5vh 20vw;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.card > h2{
+    background-color: white;
+    border-radius: 5px;
+    padding: 1vh;
+    margin: 0;
+    font-size: 2vw;
+    font-weight: normal;
+    color: var(--secondary-color)
+}
+
+.card > h2:hover{
+    color: var(--tertiary-color);
+    transition: all .3s ease-in-out;
+}
+
+span{
+    margin: 1vw 2vw;
+}
+.github{
+    background-image: var(--secondary-color-mask);
+    mask-image: url('/assets/images/github.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+
+    position: relative; /* Set the position to relative */
+    bottom: 5px; /* Adjust the value to move it upwards as desired */
+
+}
+
+.linkedin {
+    background-image: var(--secondary-color-mask);
+    mask-image: url('/assets/images/linkedin.png');
+    mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+
+    display: inline-block;
+    width: 60px;
+    height: 62px;
+
+    position: relative; /* Set the position to relative */
+    bottom: 4px; /* Adjust the value to move it upwards as desired */
+}
+
+span:hover{
+    background-image: var(--tertiary-color-mask);
+    transition: all .3s ease-in-out;
+}
