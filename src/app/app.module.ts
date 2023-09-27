@@ -15,6 +15,7 @@ import { HomeComponent } from './home/home.component';
 import { ExpNavComponent } from './experiments-page/exp-nav/exp-nav.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { CalculatorComponent } from './experiments-page/calculator/calculator.component';
+import { WeatherComponent } from './experiments-page/weather/weather.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CalculatorComponent } from './experiments-page/calculator/calculator.co
     HomeComponent,
     ExpNavComponent,
     ContactsComponent,
-    CalculatorComponent
+    CalculatorComponent,
+    WeatherComponent
   ],
   imports: [
     BrowserModule,

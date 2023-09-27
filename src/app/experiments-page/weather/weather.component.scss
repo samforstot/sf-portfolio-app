@@ -1,0 +1,18 @@
+*{
+    font-family: 'Coolvetica';
+    //outline: 2px solid red;
+}
+
+.calculator {
+    position: relative;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--tertiary-color); 
+    text-align: center;
+}
