@@ -1,0 +1,84 @@
+*{
+    font-family: 'Coolvetica';
+    //outline: 2px solid red;
+}
+
+.calculator {
+    position: relative;
+}
+
+.content-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--tertiary-color); 
+    text-align: center;
+}
+
+h2{
+    margin: 0;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 4vw;
+    color: var(--primary-color);
+}
+
+.card{
+    margin: 4vh 37vw;
+    height: 73vh;
+    background-color: var(--secondary-color);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column; /* Change the flex direction to column */
+}
+
+.display-box{
+    position: relative;
+    margin: 0;
+    //background-color: red;
+}
+
+.display-box > p{
+    padding-right: 5px;
+    margin: 5vh 1vh;
+    text-align: right;
+    background-color: darkslategrey;
+    color: white;
+    font-size: 3rem;
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); 
+  gap: 10px; 
+  height: fit-content;
+  margin-top: 0;
+  margin-bottom: 3vh;
+}
+
+.buttons{
+    background-color: var(--primary-color);
+    width: 5vh;
+    height: 5vh;
+    padding: 2vh;
+    justify-self: center;
+    border-radius: 100%;
+    color: white;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.buttons:hover{
+    background-color: rgb(73, 73, 99);
+}
+
+.buttons p{
+    margin: 0;
+    font-size: 4vh;
+}
