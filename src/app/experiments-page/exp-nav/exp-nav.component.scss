@@ -110,3 +110,88 @@ p.header:hover {
     background-color: rgb(5, 34, 58);
     transition: all .3s ease-in-out;
 }
+
+.mobile{
+    display: none;
+}
+
+@media only screen and (max-width: 767px){
+    .nav-container{
+        display: none;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .mobile-container{
+        position: relative;
+        background-color: var(--primary-color);
+        height: 8vh;
+        transition: all .3s ease-in-out;
+    }
+    
+    .mobile-container.show{
+        background-color: var(--primary-color);
+        height: 20vh;
+    }
+
+    .mobile-options{
+        position: relative;
+        display: inline;
+        justify-content: center;
+        text-align: center;
+        opacity: 0;
+        pointer-events: none;
+        transition: .1s ease-in-out;
+    }
+    
+    .mobile-container.show > .mobile-options{
+        opacity: 1;
+        cursor: pointer;
+        pointer-events: all;
+        transition: opacity .3s ease-in-out;
+        transition-delay: .3s;
+    }
+
+    p.mobile-header{
+        margin-top: 2vh;
+        margin-left: 2vh;
+        font-size: 4vh;
+        position: absolute;
+        opacity: 1;
+    }
+    
+    p.mobile-header:hover {
+        color: var(--tertiary-color);
+        transition: color .3s ease-in-out;
+        cursor: pointer;
+    }
+
+    .mobile-header{
+        display: inline-block;
+    }
+
+    .mobile-title{
+        font-size: 3vh;
+    }
+
+    .mobile-experiment-list {
+        margin-top: 1vh;
+        display: block;
+    }
+    
+    .mobile-experiment-list > p {
+        font-size: 2vh;
+        text-align: left;
+        padding-left: 10px;
+        margin: 0;
+    }
+    
+    .mobile-experiment-list > p:hover{
+        color: white;
+        background-color: rgb(5, 34, 58);
+        transition: all .3s ease-in-out;
+    }
+    
+}
