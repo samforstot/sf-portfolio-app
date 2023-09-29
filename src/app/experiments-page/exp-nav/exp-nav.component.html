@@ -11,4 +11,18 @@
             </div>
         </div>
     </div>
+    <div class="mobile">
+        <div [ngClass]="{'show': isShown}" class="mobile-container show"> 
+            <div class="mobile-options">
+                <p class="head" (click)="showResume('no')" (click)="goToPage('')" title="Back to Home">Sam Forstot</p>
+                <p class="mobile-title">Experiments:</p>
+                <div class="mobile-experiment-list">
+                    <p (click)="goToPage('Experiments/Weather')">Weather</p>
+                    <p (click)="goToPage('Experiments/Calculator')">Calculator (WIP)</p>
+                    <p>More Coming Soon</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+

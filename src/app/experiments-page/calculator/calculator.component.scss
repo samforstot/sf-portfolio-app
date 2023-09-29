@@ -26,7 +26,7 @@ h2{
 }
 
 .card{
-    margin: 2vh 72vh;
+    margin: 2vh 73vh;
     height: 73vh;
     background-color: var(--secondary-color);
     border-radius: 5px;
@@ -81,4 +81,33 @@ h2{
 .buttons p{
     margin: 0;
     font-size: 4vh;
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 1180px){
+    .content-wrapper{
+        margin-left: 25vw;
+    }
+
+    .card{
+        //margin: 2vh 72vh;
+        //height: 73vh;
+        margin: 10vh 29vh;
+    }
+
+}
+
+@media only screen and (max-width: 767px){
+
+    .content-wrapper{
+        background-color: red;
+        display: block;
+    }
+
+    .card{
+        //margin: 2vh 72vh;
+        //height: 73vh;
+        margin: 20vh 0;
+    }
+    
 }

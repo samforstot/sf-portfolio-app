@@ -74,3 +74,22 @@ span:hover{
     background-image: var(--tertiary-color-mask);
     transition: all .3s ease-in-out;
 }
+
+@media only screen and (max-width: 767px){
+    
+    h2{
+        padding-top: 40px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .github{
+        width: 2vh;
+        height: 2vh;
+    }
+
+    .linkedin{
+        width: 2vh;
+        height: 2vh;
+    }
+}
