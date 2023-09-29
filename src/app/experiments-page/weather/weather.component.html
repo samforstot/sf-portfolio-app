@@ -1,8 +1,10 @@
 <div class="Weather">    
     <app-exp-nav class="nav"></app-exp-nav>
     <div class="content-wrapper">
-        <div class="widget-row">{{WeatherData.temp_celcius}}</div>
-        <div class="widget-row">{{WeatherData.temp_min}} / {{WeatherData.temp_max}}</div>
+        <input type="text" #city>
+        <p (click)="getCity(city.value)">Search!</p>
+        <div class="widget-row">{{WeatherData.temp}}</div>
+        <div class="widget-row">Low: {{WeatherData.temp_min}} / High: {{WeatherData.temp_max}}</div>
         <div class="widget-row">{{WeatherData.name}}</div>
         <div class="widget-row">Humidity: {{WeatherData.main.humidity}}%</div>
         <div class="widget-row"></div>
