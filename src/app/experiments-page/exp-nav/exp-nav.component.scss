@@ -66,6 +66,7 @@
 
 .header{
     display: inline-block;
+    width: fit-content;
 }
 
 p {
@@ -113,6 +114,38 @@ p.header:hover {
 
 .mobile{
     display: none;
+
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1180px){
+    .nav-container{
+        position: relative;
+        margin-right: 75vw;
+    }
+
+    p.header{
+        //align-self: auto;
+        font-size: 4vh;
+    }
+
+    .icon{
+        background-image: var(--primary-color-mask);
+    }
+
+    .icon:hover{
+        background-image: var(--primary-color-mask);
+    }
+    
+    .nav-container.show{
+        background-color: var(--primary-color);
+        height: 100vh;
+        margin-right: 75vw;
+    }
+
+    .options{
+        opacity: 1;
+    }
 }
 
 @media only screen and (max-width: 767px){
@@ -129,9 +162,22 @@ p.header:hover {
         margin: 0;
     }
 
+    .head{
+        font-size: 5vh;
+    }
+
     .mobile{
         display: block;
     }
+
+    .icon{
+        background-image: var(--primary-color-mask);
+    }
+
+    .icon:hover{
+        background-image: var(--primary-color-mask);
+    }
+    
 
     .mobile-container{
         position: relative;

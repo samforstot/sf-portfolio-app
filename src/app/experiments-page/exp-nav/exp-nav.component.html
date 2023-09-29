@@ -13,9 +13,8 @@
     </div>
     <div class="mobile">
         <div [ngClass]="{'show': isShown}" class="mobile-container show"> 
-            <span [ngClass]="{'show': isShown}" class="header icon"></span>
             <div class="mobile-options">
-                <p class="mobile-header back" (click)="showResume('no')" (click)="goToPage('')" title="Back to Home">Sam Forstot</p>
+                <p class="head" (click)="showResume('no')" (click)="goToPage('')" title="Back to Home">Sam Forstot</p>
                 <p class="mobile-title">Experiments:</p>
                 <div class="mobile-experiment-list">
                     <p (click)="goToPage('Experiments/Weather')">Weather</p>

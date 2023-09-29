@@ -26,7 +26,7 @@ h2{
 }
 
 .card{
-    margin: 2vh 72vh;
+    margin: 2vh 73vh;
     height: 73vh;
     background-color: var(--secondary-color);
     border-radius: 5px;
@@ -83,6 +83,20 @@ h2{
     font-size: 4vh;
 }
 
+
+@media only screen and (min-width: 768px) and (max-width: 1180px){
+    .content-wrapper{
+        margin-left: 25vw;
+    }
+
+    .card{
+        //margin: 2vh 72vh;
+        //height: 73vh;
+        margin: 10vh 29vh;
+    }
+
+}
+
 @media only screen and (max-width: 767px){
 
     .content-wrapper{
@@ -94,59 +108,6 @@ h2{
         //margin: 2vh 72vh;
         //height: 73vh;
         margin: 20vh 0;
-        background-color: var(--secondary-color);
-        border-radius: 5px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-        display: flex;
-        flex-direction: column; /* Change the flex direction to column */
-    }
-    
-    .display-box{
-        position: relative;
-        margin: 0;
-        //background-color: red;
-    }
-    
-    .display-box > p{
-        padding-right: 5px;
-        margin: 5vh 1vh;
-        text-align: right;
-        background-color: darkslategrey;
-        color: white;
-        font-size: 3rem;
-    }
-    
-    .button-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); 
-      gap: 10px; 
-      height: fit-content;
-      margin-top: 0;
-      margin-bottom: 3vh;
-    }
-    
-    .buttons{
-        background-color: var(--primary-color);
-        width: 5vh;
-        height: 5vh;
-        padding: 2vh;
-        justify-self: center;
-        border-radius: 100%;
-        color: white;
-        display: flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-    }
-    
-    .buttons:hover{
-        background-color: rgb(73, 73, 99);
-    }
-    
-    .buttons p{
-        margin: 0;
-        font-size: 4vh;
     }
     
 }

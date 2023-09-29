@@ -79,6 +79,20 @@ input{
     font-size: 5vh;
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1180px){
+    .content-wrapper{
+        margin-left: 25vw;
+    }
+
+    .city-search{
+        margin: 50px 300px 20px 300px;
+    }
+    .weather-data{
+        margin: 0 200px;
+    }
+}
+
+
 @media only screen and (max-width: 767px){
 
     .content-wrapper{
