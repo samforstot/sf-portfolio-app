@@ -1,0 +1,17 @@
+<div class="Weather">    
+    <app-exp-nav class="nav"></app-exp-nav>
+    <div class="content-wrapper">
+        <h2>Weather Widget</h2>
+        <div class="city-search">
+            <p class="label">Enter a City</p>
+            <input type="text" #city>
+            <p class="search" (click)="getCity(city.value)">Search!</p>
+        </div>
+        <div class="weather-data">
+            <div class="widget-row name">{{WeatherData.name}}</div>
+            <div class="widget-row temp">{{WeatherData.temp}}°</div>
+            <div class="widget-row lowhigh">Low: {{WeatherData.temp_min}}° / High: {{WeatherData.temp_max}}°</div>
+            <div class="widget-row humidity">Humidity: {{WeatherData.main.humidity}}%</div>
+        </div>
+    </div>
+</div>
