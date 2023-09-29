@@ -34,7 +34,7 @@ export class WeatherComponent {
 
   setGeo(data:any){
     this.CityData = data;
-    console.log(this.CityData[0].name)
+    console.log(this.CityData)
     console.log(this.CityData[0].lon)
     console.log(this.CityData[0].lat)
     this.getWeather(this.CityData[0].lat, this.CityData[0].lon)
