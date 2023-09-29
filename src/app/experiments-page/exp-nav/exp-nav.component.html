@@ -12,8 +12,8 @@
         </div>
     </div>
     <div class="mobile">
-        <div [ngClass]="{'show': isShown}" class="mobile-container"> 
-            <span [ngClass]="{'show': isShown}" class="header icon" (click)="toggleNav()"></span>
+        <div [ngClass]="{'show': isShown}" class="mobile-container show"> 
+            <span [ngClass]="{'show': isShown}" class="header icon"></span>
             <div class="mobile-options">
                 <p class="mobile-header back" (click)="showResume('no')" (click)="goToPage('')" title="Back to Home">Sam Forstot</p>
                 <p class="mobile-title">Experiments:</p>
