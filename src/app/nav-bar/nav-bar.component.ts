@@ -31,6 +31,10 @@ export class NavBarComponent {
     this.sharedService.setResumeSection(div);
   }
 
+  openResume(link: string){
+    window.open(link, "_blank")
+  }
+
   toggleOptions(){
     this.isShown = !this.isShown;
   }
