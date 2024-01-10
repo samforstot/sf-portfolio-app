@@ -23,7 +23,6 @@ export class WeatherComponent {
 
   getCity(input: string){
     this.searchedCity = input; 
-    //console.log(this.searchedCity)
     fetch('https://api.openweathermap.org/geo/1.0/direct?q='+this.searchedCity+'&limit=5&appid=20daefffe6b92667a681bcef3be17cc0').then(response=>response.json()).then(data=>{this.setGeo(data);});
   }
   
