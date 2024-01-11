@@ -18,7 +18,7 @@ export class WeatherComponent {
     };
 
     this.getWeather("29.65140", "-82.32520");
-    console.log(this.WeatherData)
+    //console.log(this.WeatherData)
   }
 
   getCity(input: string){
