@@ -14,7 +14,7 @@ export class AppComponent {
 
   ngOnInit(){
     this.sharedService.getScrollSection().subscribe((value: string) => {
-      console.log('In App Component', value)
+      //console.log('In App Component', value)
       this.scrollToTarget(value);
     })
   }
