@@ -1,3 +1,6 @@
+# Sam Forstot
+Welcome to my portfolio repo! If you made it here it means you came to my profile which is sick. I thought that this would be a pretty fun project as it was my first site design without a team. It was built with Angular (View below) and Firebase! 
+
 # PortfolioApp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.8.
