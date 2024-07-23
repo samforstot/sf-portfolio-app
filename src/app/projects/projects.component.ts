@@ -10,6 +10,7 @@ export class ProjectsComponent {
   isFlippedGPT = false;
   isFlippedDRIG = false; 
   isFlippedHH = false;
+  isFlippedYAPPIN = false; 
 
   toggleCard(div: string){
     if(div == 'md'){
@@ -18,8 +19,10 @@ export class ProjectsComponent {
       this.isFlippedGPT = !this.isFlippedGPT;
     } else if (div == 'drig'){
       this.isFlippedDRIG = !this.isFlippedDRIG;
-    } else {
+    } else if (div == 'hh'){
       this.isFlippedHH = !this.isFlippedHH;
+    } else {
+      this.isFlippedYAPPIN = !this.isFlippedYAPPIN;
     }
   }
 }

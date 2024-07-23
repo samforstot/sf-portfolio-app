@@ -15,6 +15,13 @@
                 <p>The Gator Path Tracker (GPT) is an in-development project makes use of a web driver within various Python scripts to grab student-produced opinions and data relating to the overall difficulty of classes at the Univeristy of Florida. Sources include sites ranging from Reddit (r/ufl) to RateMyProfessor. This data is then passed to OpenAI's ChatGPT API to perform language processing to rate each class and further build a schedule for users. <a href="https://gatorpathtracker.com" target="_blank">Click here to check it out!</a></p>
             </div>
         </div>
+        <div [ngClass]="{'flip': isFlippedYAPPIN}" (click)="toggleCard('yappin')" class="card yappin">
+            <h1 class="name">Yappin</h1>
+            <div class="description">
+                <span class="yappin-image"></span>
+                <p>Yappin! is a web app made with the MERN stack and web sockets. It allows users to join individual groups and develop quote walls with friends. Quotes can be viewed and liked in real time, as each group acts as an instant messaging groupchat! User authentication is also implemented using jwts. This project was mainly used for a first attempt to use REACT and Mongodb to get a better feel for the fundamentals of each. <a href="https://yappin-app-client.onrender.com/" target="_blank">Click here to check it out!</a></p>
+            </div>
+        </div>
         <div [ngClass]="{'flip': isFlippedDRIG}" (click)="toggleCard('drig')" class="card drig">
             <h1 class="name">D.R.I.G.</h1>
             <div class="description">

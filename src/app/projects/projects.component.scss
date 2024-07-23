@@ -6,7 +6,7 @@
 }
 
 .projects {
-    height: 100vh;
+    height: 150vh;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
@@ -56,8 +56,12 @@ h2{
     background-size: 100% 100%;
 }
 
+.yappin{
+    background-image: url("/assets/images/yappinpage.png");
+    background-size: 100% 100%;
+}
+
 .name{
-    //display: none;
     opacity: 0;
     font-size: 3vh;
     transition: opacity .3s ease;
@@ -106,64 +110,48 @@ h2{
     color: var(--primary-color)
 }
 
-.md-image{
+.md-image,
+.gpt-image,
+.drig-image,
+.hh-image,
+.yappin-image {
     background-image: var(--tertiary-color-mask);
-    mask-image: url('/assets/images/mainIcon-default.svg');
     mask-size: cover;
     mask-repeat: no-repeat;
     mask-position: center;
-
     display: inline-block;
+    position: relative; 
+    top: 10%; 
+}
+
+.md-image{
+    mask-image: url('/assets/images/mainIcon-default.svg');
     width: 6vh;
     height: 12vh;
-
-    position: relative; /* Set the position to relative */
-    top: 10%; /* Adjust the value to move it upwards as desired */
 }
 
 .gpt-image{
-    background-image: var(--tertiary-color-mask);
     mask-image: url('/assets/images/gator.png');
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    mask-position: center;
-
-    display: inline-block;
     width: 12vh;
     height: 12vh;
-
-    position: relative; /* Set the position to relative */
-    top: 10%; /* Adjust the value to move it upwards as desired */
 }
 
 .drig-image{
-    background-image: var(--tertiary-color-mask);
     mask-image: url('/assets/images/stats.png');
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    mask-position: center;
-
-    display: inline-block;
     width: 12vh;
     height: 12vh;
-
-    position: relative; /* Set the position to relative */
-    top: 10%; /* Adjust the value to move it upwards as desired */
 }
 
 .hh-image{
-    background-image: var(--tertiary-color-mask);
     mask-image: url('/assets/images/bball.png');
-    mask-size: cover;
-    mask-repeat: no-repeat;
-    mask-position: center;
-
-    display: inline-block;
     width: 12vh;
     height: 12vh;
+}
 
-    position: relative; /* Set the position to relative */
-    top: 10%; /* Adjust the value to move it upwards as desired */
+.yappin-image{
+    mask-image: url('/assets/images/quote.png');
+    width: 12vh;
+    height: 12vh;
 }
 
 p {
